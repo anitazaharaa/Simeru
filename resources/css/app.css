@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Manrope');
+@import url('https://fonts.googleapis.com/css?family=Space+Grotesk');
+@import url('https://fonts.googleapis.com/css?family=JetBrains+Mono');
+@import url('https://gatsby.carbondesignsystem.com/fonts/IBMPlexSansLatin-VF.woff2');
+@import url(./table.css);
+@import url(./datetime.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --page-padding: 32px;
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        color-scheme: dark;
+    }
+
+    .gradient-1 {
+        background: linear-gradient(30deg, rgb(30 41 59) 20%, rgb(39 24 98) 90%);
+    }
+}
+
+@font-face {
+    font-display: swap;
+    font-family: IBM Plex Sans;
+    /* font-weight: 600; */
+    src: url('https://gatsby.carbondesignsystem.com/fonts/IBMPlexSansLatin-VF.woff2')
+}
+
+.page-padding {
+    padding-left:  var(--page-padding);
+    padding-right: var(--page-padding);
+}
+
+html {
+    font-family: "Manrope";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+
+    letter-spacing: 0.2px;
+    border-color: inherit;
+    transition: 0.125s ease-in-out;
+    word-wrap: break-word;
+}
+
+.carbon {
+    font-family: "IBM Plex Sans";
+}
+
+.gradient-1 {
+    background: linear-gradient(30deg, rgb(192 204 215) 20%, rgb(226 232 240) 90%)!;
+}
+
+.code {
+    font-family: "JetBrains Mono";
+    background: inherit;
+}
+
+footer {
+    transition: none;
+}
